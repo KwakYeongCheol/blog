@@ -1,0 +1,71 @@
+---
+layout: post
+comments: true
+title:  "Oh My Zsh"
+date:   2017-01-20 15:15:00 +0900
+categories: kwakstory
+---
+
+* [Oh My Zsh: github](https://github.com/robbyrussell/oh-my-zsh)
+
+
+INSTALL
+=======
+
+* zsh 가 설치되어있는지 확인한다. [> Installing zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+
+{% highlight bash %}
+$ zsh --version
+zsh 5.2 (x86_64-apple-darwin16.0)
+{% endhighlight %} 
+
+* install
+
+via curl
+{% highlight bash %}
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+{% endhighlight %}
+
+via wget
+{% highlight bash %}
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+{% endhighlight %}
+
+
+
+STRUCTURE
+=========
+{% highlight bash %}
+.
+├──.oh-my-zsh/
+├──.zshrc
+{% endhighlight %}
+
+`.oh-my-zsh/` 플러그인, 테마 등 관련 파일들이 모여 있는 디렉터리
+
+`.zshrc` zsh 환경 설정 파일. 이 파일만 조금 수정하면 기본적으로 사용할 환경설정은 끝!
+
+
+
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//kwakyc.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
